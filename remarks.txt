@@ -1,0 +1,19 @@
+1. run with the following environment: /home/amitli/OrYair/orYairVenv
+2. The following commands:
+   %load_ext autoreload
+   %autoreload 2
+   
+   helps us to install new pip packages without restart kernerl (Auto reload the new packages)
+   
+3. when running the notebook code from pycharm -> .to(Device) get stuck. I didn't found any answer.
+
+4. In 'Age prediction' I have tried to use regression model:
+   4.1 The model last layer is one tensor
+   4.2 (Epoc code):
+       We compare y with xHat, 
+       xHat is float so we need to convert y to float (like we comape 2 images in AE):
+       vY = vY.type(torch.FloatTensor)
+   4.3 (Epoc code):
+       we get (batch_size, 1) and in order to run LOSS function we need to ignore the '1' dim:
+       mZ   = mZ.squeeze() 
+   
