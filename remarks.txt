@@ -17,3 +17,7 @@
        we get (batch_size, 1) and in order to run LOSS function we need to ignore the '1' dim:
        mZ   = mZ.squeeze() 
    
+   
+5. When using ImageFolder (in order to load folder with sub folder images)
+   the tags starts from 0 
+   (if the folder names start from 20/ 21/ 22/ ... => 0,1,2...)   
