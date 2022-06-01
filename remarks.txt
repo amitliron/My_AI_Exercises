@@ -21,3 +21,9 @@
 5. When using ImageFolder (in order to load folder with sub folder images)
    the tags starts from 0 
    (if the folder names start from 20/ 21/ 22/ ... => 0,1,2...)   
+   
+6.  ImageFolder loads images as (3, 128, 128), in order to show then we need to premute them (128, 128, 3)
+
+7. If think we got bad results becuase:
+   7.1 resolution too low (128,128,3)
+   7.2 (maybe outliers) but: persons may look older or younger
