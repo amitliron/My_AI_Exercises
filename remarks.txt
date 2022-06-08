@@ -27,3 +27,8 @@
 7. If think we got bad results becuase:
    7.1 resolution too low (128,128,3)
    7.2 (maybe outliers) but: persons may look older or younger
+   
+8. Use SHAP and resnet50:
+   According to:
+   https://github.com/slundberg/shap/issues/1479
+   there is a bug: "if a layer is reused (such as activation ReLU), deep pytorch deletes the previous input/outputs of the module and replaces it with new input outputs where the activation is reused."

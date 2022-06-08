@@ -1,0 +1,11 @@
+1. Tokens vs Words:
+   "they lay back on the San Francisco grass and looked at the stars and their "
+    #words = 15
+    #tokens = 14 (San Francisco is one token)
+    token type 
+      - unique terms (hey and their have the same lemma)
+      - the , and are appearing two types so count them only one time
+      - total 11 types.
+
+
+
